@@ -2,7 +2,7 @@
 title: "Jaelon Braxton"
 ---
 
-This is a Jaelon's data scientist website.
+This is a my Data Science website.
 
 ```{r}
 1 + 1
