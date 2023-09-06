@@ -1,9 +1,0 @@
----
-title: "Jaelon Braxton"
----
-
-This is a my Data Science website.
-
-```{r}
-1 + 1
-```
