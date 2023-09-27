@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -92,6 +126,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link active" href="./EPPS6302.html" rel="" target="" aria-current="page">
  <span class="menu-text">EPPS6302</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./EPPS6356.html" rel="" target="">
+ <span class="menu-text">EPPS6356</span></a>
+  </li>  
 </ul>
             <div class="quarto-navbar-tools ms-auto">
 </div>
@@ -113,7 +151,24 @@ ul.task-list li input[type="checkbox"] {
 
 <p>This is my first <a href="https://utdallas.qualtrics.com/jfe/form/SV_7QKsuG4af2xuUjI">assignment</a>!</p>
 <iframe src="https://utdallas.qualtrics.com/jfe/form/SV_7QKsuG4af2xuUjI" height="800px" width="600px"></iframe>
-<pre><code></code></pre>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"gtrendsR"</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gtrendsR)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>BidenTrumpElection <span class="ot">=</span> <span class="fu">gtrends</span>(<span class="fu">c</span>(<span class="st">"Trump"</span>,<span class="st">"Biden"</span>,<span class="st">"election"</span>), <span class="at">time =</span> <span class="st">"all"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">family=</span><span class="st">"Georgia"</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(BidenTrumpElection)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>tg <span class="ot">=</span> <span class="fu">gtrends</span>(<span class="st">"transgender"</span>, <span class="at">time =</span> <span class="st">"all"</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Example: Transgender, Feminism and Women's rights</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># </span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">gtrends</span>(<span class="fu">c</span>(<span class="st">"transgender"</span>), <span class="at">time =</span> <span class="st">"all"</span>))</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="st">"countries"</span>)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">gtrends</span>(<span class="fu">c</span>(<span class="st">"transgender"</span>), <span class="at">geo =</span> <span class="st">"GB"</span>, <span class="at">time =</span> <span class="st">"all"</span>)) </span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">gtrends</span>(<span class="fu">c</span>(<span class="st">"transgender"</span>), <span class="at">geo =</span> <span class="fu">c</span>(<span class="st">"US"</span>,<span class="st">"GB"</span>,<span class="st">"TW"</span>), <span class="at">time =</span> <span class="st">"all"</span>)) </span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>tg_iot <span class="ot">=</span> tg<span class="sc">$</span>interest_over_time</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>tw <span class="ot">=</span> <span class="fu">gtrends</span>(<span class="fu">c</span>(<span class="st">"transgender"</span>,<span class="st">"women right"</span>), <span class="at">time =</span> <span class="st">"all"</span>)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>tw1 <span class="ot">=</span> <span class="fu">data.frame</span>(tw<span class="sc">$</span>interest_over_time)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">gtrends</span>(<span class="fu">c</span>(<span class="st">"transgender"</span>,<span class="st">"women right"</span>,<span class="st">"feminism"</span>), <span class="at">time =</span> <span class="st">"all"</span>))</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="st">"categories"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 
