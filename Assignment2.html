@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Jaelon Braxton - About</title>
+<title>Jaelon Braxton – assignment2</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -86,17 +120,58 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" rel="" target="" aria-current="page">
- <span class="menu-text">About</span></a>
+    <a class="nav-link" href="./CSV.html" rel="" target="">
+ <span class="menu-text">CSV.html</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./EPPS6302.html" rel="" target="">
- <span class="menu-text">EPPS6302</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-epps6302" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">EPPS6302</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-epps6302">    
+        <li>
+    <a class="dropdown-item" href="./Assignment1.html" rel="" target="">
+ <span class="dropdown-text">Assignment1.html</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./EPPS6356.html" rel="" target="">
- <span class="menu-text">EPPS6356</span></a>
+        <li>
+    <a class="dropdown-item" href="./Assignment2.html" rel="" target="">
+ <span class="dropdown-text">Example: Transgender, Feminism and Women’s rights</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./Assignment3.html" rel="" target="">
+ <span class="dropdown-text">Twitter data about President Biden and Xi summit in Novemeber 2021</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Assignment6.html" rel="" target="">
+ <span class="dropdown-text">Assignment6.html</span></a>
+  </li>  
+        <li class="dropdown-header">Assignment7.qmd</li>
+        <li class="dropdown-header">Assignment8.qmd</li>
+        <li>
+    <a class="dropdown-item" href="./Final Project.html" rel="" target="">
+ <span class="dropdown-text">Final Project.html</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-epps6356" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">EPPS6356</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-epps6356">    
+        <li>
+    <a class="dropdown-item" href="./AssignmentDV1.html" rel="" target="">
+ <span class="dropdown-text">Assignment 1</span></a>
+  </li>  
+        <li class="dropdown-header">AssignmentDV2.qmd</li>
+        <li class="dropdown-header">AssignmentDV3.qmd</li>
+        <li class="dropdown-header">AssignmentDV4.qmd</li>
+        <li class="dropdown-header">AssignmentDV5.qmd</li>
+        <li class="dropdown-header">AssignmentDV6.qmd</li>
+        <li class="dropdown-header">AssignmentDV7.qmd</li>
+        <li class="dropdown-header">AssignmentDV8.qmd</li>
+        <li class="dropdown-header">AssignmentDV9.qmd</li>
+        <li class="dropdown-header">AssignmentDV10.qmd</li>
+    </ul>
+  </li>
 </ul>
             <div class="quarto-navbar-tools ms-auto">
 </div>
@@ -114,24 +189,47 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">About</h1>
+
+
+<p>Assignment 2</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages("gtrendsR")</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gtrendsR)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'gtrendsR' was built under R version 4.3.2</code></pre>
 </div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-</header>
-
-<p>About this site</p>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>BidenTrumpElection <span class="ot">=</span> <span class="fu">gtrends</span>(<span class="fu">c</span>(<span class="st">"Trump"</span>,<span class="st">"Biden"</span>,<span class="st">"election"</span>), <span class="at">time =</span> <span class="st">"all"</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">family=</span><span class="st">"Georgia"</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(BidenTrumpElection)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Assignment2_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>tg <span class="ot">=</span> <span class="fu">gtrends</span>(<span class="st">"transgender"</span>, <span class="at">time =</span> <span class="st">"all"</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Example: Transgender, Feminism and Women's rights</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># </span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">gtrends</span>(<span class="fu">c</span>(<span class="st">"transgender"</span>), <span class="at">time =</span> <span class="st">"all"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Assignment2_files/figure-html/unnamed-chunk-1-2.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="st">"countries"</span>)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">gtrends</span>(<span class="fu">c</span>(<span class="st">"transgender"</span>), <span class="at">geo =</span> <span class="st">"GB"</span>, <span class="at">time =</span> <span class="st">"all"</span>)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Assignment2_files/figure-html/unnamed-chunk-1-3.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">gtrends</span>(<span class="fu">c</span>(<span class="st">"transgender"</span>), <span class="at">geo =</span> <span class="fu">c</span>(<span class="st">"US"</span>,<span class="st">"GB"</span>,<span class="st">"TW"</span>), <span class="at">time =</span> <span class="st">"all"</span>)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Assignment2_files/figure-html/unnamed-chunk-1-4.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>tg_iot <span class="ot">=</span> tg<span class="sc">$</span>interest_over_time</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>tw <span class="ot">=</span> <span class="fu">gtrends</span>(<span class="fu">c</span>(<span class="st">"transgender"</span>,<span class="st">"women right"</span>), <span class="at">time =</span> <span class="st">"all"</span>)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>tw1 <span class="ot">=</span> <span class="fu">data.frame</span>(tw<span class="sc">$</span>interest_over_time)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">gtrends</span>(<span class="fu">c</span>(<span class="st">"transgender"</span>,<span class="st">"women right"</span>,<span class="st">"feminism"</span>), <span class="at">time =</span> <span class="st">"all"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Assignment2_files/figure-html/unnamed-chunk-1-5.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="st">"categories"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 
 
 
